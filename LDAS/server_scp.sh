@@ -1,8 +1,9 @@
-for i in `seq 92` 
+for i in `seq 1` 
 do
     #ssh root@150.89.223.$i /bin/LSS/students/init.sh
     #ssh root@150.89.223.$i /bin/LSS/students/ctrl.sh
-    ssh root@150.89.223.$i crontab -r
-    scp root root@150.89.223.$i:/var/spool/root 
-    scp file.sh root@150.89.223.$i:/bin/LSS/students/file/
+    ssh root@150.89.223.92 crontab -r
+    scp  crontab root@150.89.223.92:/etc/
+    ssh root@150.89.223.92 crontab -u root /etc/crontab
+    scp file.sh root@150.89.223.92:/bin/LSS/students/file/
 done
