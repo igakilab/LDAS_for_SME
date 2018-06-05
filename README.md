@@ -20,7 +20,7 @@ LDAS_for_SMEでは, 授業の基礎演習環境にインストールする事を
 
 LDAS/  
 　 ├─ students/  
-　 └── teacher/  
+　 └─ teacher/  
 
 teacher/  
 
@@ -28,7 +28,13 @@ teacher/
 
 
 # セットアップ方法
+
+
+
 ## 学生用
+
+    $ scp   
+
 ### コマンド実行履歴
 ### Installation
 
@@ -43,7 +49,9 @@ crontabを以下の用に編集する.
     */5 * * * * /bin/LSS/students/ctrl.sh
     */5 13-17 * * 1 /bin/LSS/students/ctrl.sh
 
+crontabファイルを読み込む
 
+    $ crontab -u root /etc/crontab 
 
 
 
