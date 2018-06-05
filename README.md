@@ -54,6 +54,25 @@ crontabファイルを読み込む
     $ crontab -u root /etc/crontab 
 
 
+### ファイル編集履歴
+
+### lsyncd
+### インストール方法
+
+    $ yum -y install lsyncd
+
+### 設定ファイルの編集
+
+    $ cp -p /usr/share/doc/lsyncd-2.1.4/examples/lrsync.lua /etc/lsyncd.conf
+    $ vi /etc/lsyncd.conf
+
+
+
+
+### lsyncdのデーモン登録
+
+    $ chkconfig --add lsyncd
+
 
 ## 教員用
 - サーバ状況確認履歴
