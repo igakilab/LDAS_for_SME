@@ -46,7 +46,7 @@ done
 
 # 変更された差分をコミットする
 git add * >& /dev/null
-git commit -m 'commit' >& /dev/null
+git commit -am 'commit' >& /dev/null
 
 #変更された差分をpushする
 git pull >& /dev/null
