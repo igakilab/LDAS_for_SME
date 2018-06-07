@@ -1,12 +1,12 @@
-# Installation
+# Python2.7
 
-## 本環境インストールコマンド一覧
+## Installation
 
-Python2.6.6(標準でインストールされている可能性あり)
+## Python2.6.6(標準でインストールされている可能性あり)
 
     $ yum -y install python  
 
-Python2.7
+## Python2.7
 
     $ yum -y install centos-release-scl-rh
     $ yum -y install python27
@@ -16,27 +16,43 @@ Python2.7
     
     //常に使える状態にするためには~/.bashrcに追記
     source /opt/rh/python27/enable
+## version確認
 
-pip7.1.0(python2.7以上はpip8.1.2は自動でインストールされる)
+    $ python -V  
+
+# pip7.1.0 (python2.7以上はpip8.1.2は自動でインストールされる)
+## Installation
 
     $ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
     $ yum -y install python-pip 
+
+## version確認
+
+    $ python -V  
     
-pyinotify 0.9.6
+# pyinotify 0.9.6
 
     $ pip install pyinotify
 
-GitPython 2.1.10
+# GitPython 2.1.10
 
     $ pip install gitpython
 
-lsyncd
+
+# rsync
+
+## Installation
+
+    $ yum -y isntall rsync  
+
+
+# lsyncd
+
+## Installaion
 
     $ yum -y install lsyncd
 
-rsync
 
-    $ yum -y isntall rsync  
 
 Apache
 
@@ -50,13 +66,13 @@ Tomcat
 
 ## バージョン確認コマンド一覧
 
-CentOS  
+## CentOS  
 
     $ cat /etc/redhat-release  
 
-Python
+## Python
 
-    $ python -V  
+
 
 pip
 
@@ -88,6 +104,8 @@ Tomcat
 
 
 # Git
+
+## Installation
 
 ### gitコマンド
 ### よく使うコマンド
