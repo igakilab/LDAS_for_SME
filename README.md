@@ -17,9 +17,6 @@ LDAS_for_SMEでは, 授業の基礎演習環境にインストールする事を
 ### サーバ状況確認履歴
 サーバ演習課題に応じたshellscriptを実行して，実行結果をデータベースに保存している．
 
-
-
-
 # 全体のディレクトリ構成
 
 LDAS/  
@@ -44,13 +41,13 @@ teacher/
 ## 想定している環境
 - CentOS 6.7  
 - script 
-- rsync 3.0.6
 - cron
 
 
 ## インストールが必要なソフト
 - python 2.6.6
 - pip 7.1.0
+- rsync 3.0.6  
 - lsyncd 2.1.4
 - inotify
 - Apache 2.2.15
@@ -64,19 +61,16 @@ Python
 
 pip
 
-    $ yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm $ 
+    $ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+    $ yum -y install python-pip 
 
 lsyncd
 
-    $ lsyncd --version  
+    $ yum -y install lsyncd
 
 rsync
 
-    $ rsync --version  
-
-cron
-
-    $ whereis -b crontab | cut -d' ' -f2 | xargs rpm -qf  
+    $ yum -y isntall rsync  
 
 inotify
 
@@ -84,11 +78,11 @@ inotify
 
 Apache
 
-    $ httpd -v
+    $ yum -y install httpd
 
 Tomcat
 
-    $ tomcat version
+    $ yum -y install tomcat
 
 
 
@@ -237,18 +231,13 @@ pythonのバージョン確認コマンド
 ### pip
 ### インストール方法
 
-pyinotifyをインストールするためには，pipが必要になる．
-しかし，大学の環境ではpipはインストールされていない．
+pyinotifyをインストールするためには，pipが必要になる．  
+しかし，大学の環境ではpipはインストールされていない．  
 そこで，pipをインストールする
-
 
 一番簡単な方法
 
     $ 
-
-
-
-
 
 ### lsyncdのデーモン登録
 
