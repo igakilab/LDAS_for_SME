@@ -44,87 +44,16 @@ teacher/
 - cron
 
 
-## インストールが必要なソフト
-- python 2.6.6
-- pip 7.1.0
+## インストールが必要なソフト(Know-how.mdで解説)
+- python 2.6.6 -> python2.7.13に変更が必要と判明
+- pip 7.1.0 -> pip 8.1.2に変更が必要と判明
+- pymongo 3.6.1
+- pyinotify 0.9.6
+- GitPython 2.1.10
 - rsync 3.0.6  
 - lsyncd 2.1.4
-- inotify
 - Apache 2.2.15
-- tomcat 7.0.85
-
-## インストールコマンド一覧
-
-Python
-
-    $ yum -y install python  
-
-pip
-
-    $ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-    $ yum -y install python-pip 
-
-lsyncd
-
-    $ yum -y install lsyncd
-
-rsync
-
-    $ yum -y isntall rsync  
-
-inotify
-
-    $   
-
-Apache
-
-    $ yum -y install httpd
-
-Tomcat
-
-    $ yum -y install tomcat
-
-
-
-## バージョン確認コマンド一覧
-
-CentOS  
-
-    $ cat /etc/redhat-release  
-
-Python
-
-    $ python -V  
-
-pip
-
-    $ pip -V  
-
-lsyncd
-
-    $ lsyncd --version  
-
-rsync
-
-    $ rsync --version  
-
-cron
-
-    $ whereis -b crontab | cut -d' ' -f2 | xargs rpm -qf  
-
-inotify
-
-    $   
-
-Apache
-
-    $ httpd -v
-
-Tomcat
-
-    $ tomcat version
-
-
+- Tomcat 7.0.85å
 
 # セットアップ方法
 
@@ -143,7 +72,8 @@ Githubのリポジトリからクローン
 
 
 
-## 学生用
+# 学生用
+
 
     $ scp   
 
@@ -169,81 +99,6 @@ crontabファイルを読み込む
 ### ファイル編集履歴
 
 
-### gitコマンド
-### よく使うコマンド
-Initialize commit
-
-    $ git init
-    $ git add .
-    $ git commit -m "コメント"
-
-Clone command
-
-    $ git clone git@
-
-
-Add commit
-
-    $ git add .
-    $ git commit -m "コメント"
-
-Delete commit
-
-    $ git rm $(git ls-files --deleted)
-    $ git commit -m "コメント"
-
-Show log
-
-    $ git log
-
-Status git
-
-    $ git status
-
-Diff git
-
-    $ git diff
-
-
-
-### lsyncd
-### インストール方法
-
-    $ yum -y install lsyncd
-
-### 設定ファイルの編集
-
-    $ cp -p /usr/share/doc/lsyncd-2.1.4/examples/lrsync.lua /etc/lsyncd.conf
-    $ vi /etc/lsyncd.conf
-    $ vi /etc/rsyncd.conf
-
-### python
-### インストール方法
-
-    $ yum -y install python
-
-pythonのバージョン確認コマンド
-
-    $ python -V
-
-上記コマンドを実行して，pythonのバージョンが表示されたらインストール完了．
-
-### pip
-### インストール方法
-
-pyinotifyをインストールするためには，pipが必要になる．  
-しかし，大学の環境ではpipはインストールされていない．  
-そこで，pipをインストールする
-
-一番簡単な方法
-
-    $ 
-
-### lsyncdのデーモン登録
-
-    $ chkconfig --add lsyncd
-
-
-## 教員用
+# 教員用
 - サーバ状況確認履歴
 - DB
