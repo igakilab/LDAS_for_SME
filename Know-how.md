@@ -152,6 +152,7 @@ Diff git
 # lsyncd
 ### インストール方法
 
+    $ yum install epel-release
     $ yum -y install lsyncd
 
 ### 設定ファイルの編集
