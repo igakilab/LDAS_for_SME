@@ -30,11 +30,11 @@
 
     $ python -V  
     
-# pyinotify 0.9.6
+# pyinotify 0.9.6(使わなかった...)
 
     $ pip install pyinotify
 
-# GitPython 2.1.10
+# GitPython 2.1.10 (使わなかった...)
 
     $ pip install gitpython
 

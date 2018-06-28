@@ -14,7 +14,7 @@ do
 
     #scp lsyncd.conf root@150.89.223.$i:/etc/
     #scp file_edit_init.sh root@150.89.223.$i:/bin/LSS/students/file/
-    scp file.sh root@150.89.223.$i:/bin/LSS/students/file/
+    #scp file.sh root@150.89.223.$i:/bin/LSS/students/file/
     #scp ctrl.sh root@150.89.223.$i:/bin/LSS/students/
 
     #ssh root@150.89.223.$i rm -rf ~/.ssh/known_hosts 
@@ -36,6 +36,6 @@ do
     #ssh root@150.89.223.$i rm -rf /bin/LSS/students/file/repo
     #ssh root@150.89.223.$i service lsyncd restart
 
-    ssh root@150.89.223.$i /bin/LSS/students/file/file.sh
+    #ssh root@150.89.223.$i /bin/LSS/students/file/file.sh
 
 done

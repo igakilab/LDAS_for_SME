@@ -19,6 +19,9 @@ easy_install pymongo
 
 #ファイル編集履歴収集用コマンドのインストール
 yum -y install rsync
+yum -y install epel-release
+yum -y install lsyncd
+yum -y erase epel-release
 yum -y install git
 
 #ファイル編集履歴収集用スクリプトの実行

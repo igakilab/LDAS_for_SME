@@ -25,6 +25,8 @@ LDAS/
 
 students/  
 　 ├─ cmd/ //コマンド実行履歴  
+　 |　 　 ├─ .bash_profile //scriptコマンドを仕込んでいる
+　 |　 　 ├─ .bashrc //プロンプトの表示を変更
 　 |　 　 ├─ cast_data3.py //コマンド実行履歴収集プログラム  
 　 |　 　 └─ log/ //scriptコマンドで収集したログファイルを保存    
 　 └─ file/ //ファイル編集履歴  
