@@ -1,4 +1,4 @@
-# Python2.7
+# Python2.7  
 
 ## Installation
 
@@ -153,7 +153,7 @@ Diff git
 ### インストール方法
 
     $ yum install epel-release
-    $ yum -y install lsyncd
+    $ yum --enablerepo=epel install lsyncd
 
 ### 設定ファイルの編集
 

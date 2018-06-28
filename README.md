@@ -1,5 +1,5 @@
 # LDAS_for_SME
-Learning Data Analysis System for Server Management Exervise
+Learning Data Analysis System for Server Management Exercise
 
 # Description
 LDAS_for_SMEでは, 授業の基礎演習環境にインストールする事を前提にしている. 
@@ -8,7 +8,7 @@ LDAS_for_SMEでは, 授業の基礎演習環境にインストールする事を
 
 
 ## コマンド実行履歴
-学生が入力したコマンドのログ情報を収集している.
+学生が入力したコマンドのログ情報を収集している.
 .bash_profileにscriptコマンドを追記しておく
 
 ## ファイル編集履歴
@@ -75,7 +75,7 @@ Githubのリポジトリからクローン
 # 学生用
 
 
-    $ scp   
+    $ scp  
 
 ### コマンド実行履歴
 ### Installation
